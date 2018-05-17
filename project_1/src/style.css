@@ -1,0 +1,193 @@
+*{box-sizing: border-box; margin: 0;}
+
+body{padding: 10px;}
+
+.brand{
+    font-family: "Snell Roundhand"; 
+    font-weight: normal; 
+    font-size: 60px; 
+    text-align: center; 
+    
+}
+
+/*.brand-header{border-bottom: 3px solid black;  clear: both;}*/
+
+/*.row:first-child{border-top: 3px solid black; clear: left;}*/
+.row{
+    
+    display: flex; 
+    width: 100%; 
+    align-items: stretch; 
+    border-bottom: 3px solid black; 
+    border-left: 1px solid black; 
+    
+}
+
+.story{
+    border-right: 1px solid black; 
+    padding: 0 10px; 
+}
+
+.quarter-sect{width: 25%; }
+
+.half-sect{width: 50%; }
+
+.three-quarter{width: 75%;}
+
+.article-img{width: 100%; }
+
+.article-title{
+    font-size: 30px; 
+    text-align: center; 
+    font-weight: normal; 
+    font-style: italic; 
+}
+
+.other-sections{
+    display: flex; 
+    flex-direction: column; 
+    align-items: stretch; 
+    justify-content: center; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.site-section{
+    display: flex; 
+    align-items: center; 
+    flex: 1; 
+}
+
+.section-link{
+    color: black; 
+    text-decoration: none; 
+    font-size: 30px; 
+    padding-left: 30px; 
+    font-weight: bold; 
+    font-family: "Futura"; 
+    color: #666; 
+}
+
+.section-link:hover{text-decoration: underline;}
+
+.site-section-local{background-color: #55efc4;}
+.site-section-tech{background-color: #81ecec;}
+.site-section-opinion{background-color: #74b9ff;}
+.site-section-sports{background-color: #a29bfe;}
+.site-section-politics{background-color: #ffeaa7;}
+
+/*nav bar*/
+/*
+.center{
+    margin: auto;  
+    width: 60%; 
+    margin-top:10px;
+}
+
+nav{margin-top: 15px; text-align: center;}
+nav ul{
+    list-style: none; 
+    position: relative; 
+    float: left; 
+    margin: 0; 
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    
+}
+
+nav ul a{
+    display: block; 
+    color: black; 
+    text-decoration: none; 
+    font-weight: normal; 
+    font-size: 10px; 
+    line-height: 20px;
+    padding: 0 15px; 
+    text-align: center;
+}
+
+nav ul li{
+    position: relative; 
+    float: left; 
+    margin: 0; 
+    padding: 0; 
+    
+}
+*/
+nav ul li:hover{
+   background: #f6f6f6;  
+}
+
+/*dropdown for sub menus*/
+nav ul ul {
+    display: none; /*do not show*/
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    background: #fff; 
+    padding: 0; 
+}
+
+nav ul ul li{
+    float: none; 
+    width: 200px;     
+}
+
+/*link for submenu*/
+nav ul ul li a{
+    line-height: 120%; 
+    padding: 10px 10px; 
+}
+
+/**/
+nav ul ul ul{
+    top: 0; 
+    left: 100%; 
+}
+
+/*displays sub menu*/
+nav ul li:hover>ul{
+    display: block; 
+}
+.line{
+     
+    width: 100%; 
+    border-bottom: 3px solid black;
+}
+nav {
+  /*background: url(../images/hr.svg);*/
+  background-size: 960px;
+  /*border-bottom: 1px solid #dedede;*/
+  border-top: 1px solid #dedede;  
+  text-align: center;
+}
+nav a {
+  display: inline-block;
+  text-transform: uppercase;
+  line-height: 31px;
+  color: #58585a;
+  font-size: 10px;
+  text-decoration: none;
+  margin: 0 6px;
+}
+nav a.active,
+nav a:hover {
+  color: #000000;
+}
+nav li {
+  display: inline-block;
+  height: 30px;
+}
+nav ul {
+  display: block;
+  overflow: scroll;
+}
+header {
+  
+  top: 0;
+  /*min-height: 226px;*/
+  /*width: 960px;*/
+  /*padding-bottom: 30px;*/
+  background: #ffffff;
+}
